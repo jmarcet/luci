@@ -13,7 +13,6 @@ LUCI_DEPENDS:= \
 	+collectd \
 	+rrdtool1 \
 	+collectd-mod-rrdtool \
-	+collectd-mod-iwinfo \
 	+collectd-mod-cpu \
 	+collectd-mod-memory \
 	+collectd-mod-interface \
