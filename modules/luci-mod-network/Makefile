@@ -7,7 +7,7 @@
 include $(TOPDIR)/rules.mk
 
 LUCI_TITLE:=LuCI Network Administration
-LUCI_DEPENDS:=+luci-base +rpcd-mod-iwinfo +luci-lib-uqr
+LUCI_DEPENDS:=+luci-base +luci-lib-uqr
 
 PKG_LICENSE:=Apache-2.0
 
