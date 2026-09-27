@@ -4,8 +4,7 @@
 'require ui';
 
 const localFile = '/etc/adblock/adblock.blocklist';
-const maxSize = 100000;
-let notMsg = false;
+let notMsg = false, errMsg = false;
 
 const resetScroll = () => {
 	document.body.scrollTop = document.documentElement.scrollTop = 0;
@@ -13,24 +12,19 @@ const resetScroll = () => {
 
 return view.extend({
 	load: function () {
-		return L.resolveDefault(fs.stat(localFile), null)
+		return L.resolveDefault(fs.stat(localFile), "")
 			.then(function (stat) {
-				if (!stat) {
-					return fs.write(localFile, "").then(() => [{ size: 0 }, ""]);
-				}
-				return Promise.all([
-					Promise.resolve(stat),
-					L.resolveDefault(fs.read_direct(localFile), "")
-				]);
-			});
+			if (!stat) {
+				return fs.write(localFile, "");
+			}
+			return Promise.all([
+				L.resolveDefault(fs.stat(localFile), ""),
+				L.resolveDefault(fs.read_direct(localFile), "")
+			]);
+		});
 	},
-
 	render: function (blocklist) {
-		const size = blocklist[0] ? blocklist[0].size : 0;
-		const content = blocklist[1] != null ? blocklist[1] : '';
-		const tooBig = size >= maxSize;
-
-		if (tooBig) {
+		if (blocklist[0] && blocklist[0].size >= 100000) {
 			resetScroll();
 			ui.addNotification(null, E('p', _('The blocklist is too big, unable to save modifications.')), 'error');
 		}
@@ -38,32 +32,31 @@ return view.extend({
 			E('p', _('This is the local adblock blocklist to always-block certain domains.<br /> \
 				<em><b>Please note:</b></em> add only one domain per line. Comments introduced with \'#\' are allowed - ip addresses, wildcards and regex are not.')),
 			E('textarea', {
-				'style': 'width: 100% !important; padding: 5px; font-family: monospace; margin-top: .4em',
+				'style': 'min-height: 500px; max-height: 90vh; width: 100%; padding: 5px; font-family: monospace; resize: vertical;',
 				'spellcheck': 'false',
 				'wrap': 'off',
-				'rows': 25,
-				'readonly': tooBig ? 'readonly' : null,
-				'input': function () { notMsg = false; }
-			}, [content])
+				'rows': 25
+			}, [blocklist[1] != null ? blocklist[1] : ''])
 		]);
 	},
-
-	handleSave: function (_ev) {
-		const value = ((document.querySelector('textarea').value || '').trim().toLowerCase().replace(/[^a-z0-9.\-# \r\n]/g, '').replace(/\r\n?/g, '\n'));
+	handleSave: function (ev) {
+		let value = ((document.querySelector('textarea').value || '').trim().toLowerCase().replace(/[^a-z0-9\.\-# \r\n]/g, '').replace(/\r\n?/g, '\n'));
 		return fs.write(localFile, value + "\n")
-			.then(function () {
-				document.querySelector('textarea').value = value + "\n";
-				resetScroll();
-				if (!notMsg) {
-					notMsg = true;
-					ui.addNotification(null, E('p', _('Blocklist modifications have been saved, reload adblock that changes take effect.')), 'info');
-				}
-			}).catch(function (e) {
-				resetScroll();
+		.then(function () {
+			document.querySelector('textarea').value = value;
+			resetScroll();
+			if (!notMsg) {
+				ui.addNotification(null, E('p', _('Blocklist modifications have been saved, reload adblock that changes take effect.')), 'info');
+				notMsg = true;
+			}
+		}).catch(function (e) {
+			resetScroll();
+			if (!errMsg) {
 				ui.addNotification(null, E('p', _('Unable to save modifications: %s').format(e.message)), 'error');
-			});
+				errMsg = true;
+			}
+		});
 	},
-
 	handleSaveApply: null,
 	handleReset: null
 });
