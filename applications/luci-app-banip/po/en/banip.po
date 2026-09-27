@@ -1,14 +1,8 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-09-22 00:01+0000\n"
-"Last-Translator: pisquan8 <cimurro@outlook.de>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/openwrt/"
-"luciapplicationsbanip/it/>\n"
-"Language: it\n"
+"Language: en\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9-dev\n"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:710
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:718
@@ -51,7 +45,7 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/ipsetreport.js:127
 msgid "Action"
-msgstr "Azione"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:276
 msgid "Active Devices"
@@ -155,11 +149,11 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:439
 msgid "Backup Directory"
-msgstr "Directory del Backup"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:435
 msgid "Base Temp Directory"
-msgstr "Base directory Temporanea"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:435
 msgid "Base Temp Directory used for all banIP related runtime operations."
@@ -177,13 +171,13 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:347
 msgid "Blocklist Sources"
-msgstr "Fonti lista di Blocco"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/ipsetreport.js:22
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/ipsetreport.js:73
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:73
 msgid "Cancel"
-msgstr "Annulla"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:139
 msgid ""
@@ -245,15 +239,15 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:459
 msgid "Download Parameters"
-msgstr "Parametri di download"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:425
 msgid "Download Queue"
-msgstr "Coda download"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:447
 msgid "Download Utility"
-msgstr "Utilità di download"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:739
 msgid "E-Mail Actions"
@@ -261,28 +255,28 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:395
 msgid "E-Mail Notification"
-msgstr "Notifica e-mail"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:734
 msgid "E-Mail Profile"
-msgstr "Profilo e-mail"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:399
 msgid "E-Mail Receiver Address"
-msgstr "Indirizzo e-mail destinatario"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:726
 msgid "E-Mail Sender Address"
-msgstr "Indirizzo e-mail mittente"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:730
 msgid "E-Mail Topic"
-msgstr "Oggetto e-mail"
+msgstr ""
 
 #: applications/luci-app-banip/luasrc/controller/banip.lua:9
 #: applications/luci-app-banip/root/usr/share/luci/menu.d/luci-app-banip.json:35
 msgid "Edit Blacklist"
-msgstr "Modifica blacklist"
+msgstr ""
 
 #: applications/luci-app-banip/luasrc/controller/banip.lua:11
 #: applications/luci-app-banip/root/usr/share/luci/menu.d/luci-app-banip.json:51
@@ -292,7 +286,7 @@ msgstr ""
 #: applications/luci-app-banip/luasrc/controller/banip.lua:10
 #: applications/luci-app-banip/root/usr/share/luci/menu.d/luci-app-banip.json:43
 msgid "Edit Whitelist"
-msgstr "Modifica whitelist"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:387
 msgid "Enable DST logging"
@@ -309,11 +303,10 @@ msgstr ""
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:407
 msgid "Enable verbose debug logging in case of any processing errors."
 msgstr ""
-"Abilita log di debug verboso in caso di qualsiasi errore di elaborazione."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:352
 msgid "Enabled"
-msgstr "Abilitato"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:371
 msgid "Enables IPv4 support in banIP."
@@ -329,7 +322,7 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:18
 msgid "Existing job(s)"
-msgstr "Processi esistenti"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:805
 msgid "Extra Sources"
@@ -337,7 +330,7 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:342
 msgid "General Settings"
-msgstr "Impostazioni Generali"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:470
 msgid "Global IPSet Type"
@@ -386,7 +379,7 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:262
 msgid "Information"
-msgstr "Informazioni"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:589
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:637
@@ -491,7 +484,7 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/ipsetreport.js:118
 msgid "Name"
-msgstr "Nome"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:363
 msgid "Network Interfaces"
@@ -553,7 +546,7 @@ msgstr ""
 #: applications/luci-app-banip/luasrc/controller/banip.lua:7
 #: applications/luci-app-banip/root/usr/share/luci/menu.d/luci-app-banip.json:19
 msgid "Overview"
-msgstr "Riepilogo"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:677
 msgid "Parse only the last stated number of log entries for suspicious events."
@@ -574,7 +567,7 @@ msgstr ""
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/ipsetreport.js:229
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:324
 msgid "Refresh"
-msgstr "Ricaricare"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:15
 msgid "Refresh Timer"
@@ -594,7 +587,7 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:331
 msgid "Restart"
-msgstr "Riavvia"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:391
 msgid ""
@@ -637,7 +630,7 @@ msgstr ""
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/ipsetreport.js:38
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:107
 msgid "Save"
-msgstr "Salva"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/ipsetreport.js:46
 msgid ""
@@ -716,7 +709,7 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:340
 msgid "Settings"
-msgstr "Impostazioni"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:425
 msgid "Size of the download queue for download processing in parallel."
@@ -833,7 +826,7 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/ipsetreport.js:119
 msgid "Type"
-msgstr "Tipo"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/blacklist.js:17
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/maclist.js:17
@@ -886,40 +879,3 @@ msgstr ""
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:41
 msgid "banIP action"
 msgstr ""
-
-#~ msgid "Description"
-#~ msgstr "Descrizione"
-
-#~ msgid ""
-#~ "For further information <a href=\"%s\" target=\"_blank\">check the online "
-#~ "documentation</a>"
-#~ msgstr ""
-#~ "Per saperne di più, <a href=\"%s\" target=\"_blank\">consultare la "
-#~ "documentazione su internet</a>"
-
-#~ msgid ""
-#~ "For further performance improvements you can raise this value, e.g. '8' "
-#~ "or '16' should be safe."
-#~ msgstr ""
-#~ "Per mingliorare le performance in futuro puoi aumentare questo valore, "
-#~ "'8' o '16' dovrebbero essere sicuri."
-
-#~ msgid "Geo Location"
-#~ msgstr "Geolocalizzazione"
-
-#~ msgid "Load"
-#~ msgstr "Carico"
-
-#~ msgid "Loading"
-#~ msgstr "Caricamento"
-
-#~ msgid "Low Priority Service"
-#~ msgstr "Serviio a bassa priorità"
-
-#~ msgid "Reload"
-#~ msgstr "Aggiorna"
-
-#~ msgid "This change requires a manual service stop/re-start to take effect."
-#~ msgstr ""
-#~ "Per rendere effettiva questa modifica è necessario arrestare/riavviare il "
-#~ "servizio manualmente."
